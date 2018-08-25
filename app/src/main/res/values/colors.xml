@@ -8,6 +8,8 @@
     <color name="colorGreen">#3DBC65</color>
     <color name="colorRed">#BE1729</color>
     <color name="colorPurple">#902E89</color>
+    <color name="colorLightPurple">#954DA5</color>
+    <color name="colorDarkPurple">#743A81</color>
     <color name="colorGrey">#292929</color>
     <color name="colorOrange">#E96D02</color>
     <color name="colorYellow">#F3CA19</color>

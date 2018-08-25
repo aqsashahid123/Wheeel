@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
+    android:background="@color/colorLightPurple"
     android:layout_height="match_parent"
     tools:context=".Views.Activities.AddYourPhotoView">
+    <com.anton46.stepsview.StepsView
+        android:id="@+id/stepsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_below="@id/stepsView"
+        android:id="@+id/ivProfilePic"
+        android:layout_width="100dp"
+        android:padding="@dimen/margin_20"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp"
+        android:src="@drawable/user"
+        android:background="@drawable/bg_dark_purple"
+        android:layout_marginTop="@dimen/margin_50"
+        />
+    <TextView
+        android:id="@+id/tvProPic"
+        android:layout_below="@+id/ivProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/colorWhite"
+        android:text="Add your photo"/>
 
-</android.support.constraint.ConstraintLayout>
+    <RadioGroup
+        android:checkedButton="@+id/offer"
+        android:id="@+id/toggle"
+        android:layout_below="@id/tvProPic"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/bg_white_rectangular"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/search"
+            android:background="@drawable/toggle_widget_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/colorWhite" />
+
+        <RadioButton
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/offer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Offers"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+
+</RelativeLayout>
