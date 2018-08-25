@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wheeel</string>
+    <string name="label_spin_to_play">Spin to play</string>
+    <string name="label_my_bet">My Bet</string>
+    <string name="label_balance">Balance</string>
+    <string name="label_login">LOGIN</string>
+    <string name="label_password">Password</string>
+    <string name="label_username">Username</string>
+</resources>
