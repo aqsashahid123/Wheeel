@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorYellow"
+    android:background="@drawable/gradiant"
     tools:context=".Views.Activities.SigninView">
 
 
-    <TextView
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="BETGAME"
+        android:src="@drawable/bet_game"
         android:layout_marginTop="@dimen/margin_30"
         android:textSize="@dimen/textsize_20"
         android:gravity="center"
+        android:layout_gravity="center"
         android:textColor="@color/colorGrey"/>
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_marginTop="@dimen/margin_10"
         android:text="Sign In"
         android:layout_marginBottom="@dimen/margin_50"
-        android:textSize="@dimen/textsize_20"
+        android:textSize="@dimen/textsize_30"
         android:gravity="center"
         android:textColor="@color/colorWhite"/>
 
@@ -38,6 +39,7 @@
         android:drawableLeft="@drawable/user"
         android:hint="@string/label_username"
         android:textColorHint="@color/colorGreyHint"
+        android:textSize="@dimen/textsize_17"
         android:drawablePadding="@dimen/margin_10"
         android:background="@drawable/bg_edittext_white"/>
     <EditText
@@ -46,38 +48,54 @@
         android:padding="@dimen/margin_10"
         android:layout_marginTop="@dimen/margin_10"
         android:layout_marginLeft="@dimen/margin_50"
+        android:textSize="@dimen/textsize_17"
         android:hint="@string/label_password"
         android:textColorHint="@color/colorGreyHint"
         android:layout_marginRight="@dimen/margin_50"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="@dimen/margin_10"
         android:background="@drawable/bg_edittext_white"/>
 
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
         android:layout_marginTop="@dimen/margin_30"
         android:layout_marginLeft="@dimen/margin_50"
         android:layout_marginRight="@dimen/margin_50"
-        android:background="@drawable/bg_btn_login"
+        android:background="@drawable/yellow_btn_bg"
         android:text="@string/label_login"/>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
     android:layout_weight="1">
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/bg_btn_signup_with_email"
+        android:text="Sign up with E-mail"/>
     <Button
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
-        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_20"
         android:layout_marginLeft="@dimen/margin_50"
         android:layout_marginRight="@dimen/margin_50"
-        android:background="@drawable/bg_btn_signup_with_email"
-        android:text="Sgn up with E-mail"/>
+        android:background="@drawable/bg_white_rect_boundry"
+        android:text="How to Play?"/>
 </LinearLayout>
 </LinearLayout>

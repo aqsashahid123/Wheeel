@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.onebyte.wheeel.R;
+import com.example.onebyte.wheeel.Views.StatusBarColor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnPlay = (Button) findViewById(R.id.btnPlay);
-
+        StatusBarColor.SetColor(this);
         luckyWheelView = findViewById(R.id.luckyWheel);
         List<LuckyItem> data = new ArrayList<>();
 //        for (int i=0; i<12; i++) {

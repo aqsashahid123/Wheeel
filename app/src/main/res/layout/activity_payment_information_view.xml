@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.Activities.PaymentInformationView">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Information"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_30"
+        android:layout_marginTop="@dimen/margin_50"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_15"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/bg_edittext_white"
+        android:padding="@dimen/margin_15"
+        android:textColorHint="@color/colorLightGrey"
+        android:layout_marginTop="@dimen/margin_30"
+       android:hint="Card Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_15"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/bg_edittext_white"
+        android:padding="@dimen/margin_15"
+        android:textColorHint="@color/colorLightGrey"
+        android:layout_marginTop="@dimen/margin_10"
+        android:hint="Card Number"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:text="Expire Date"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            android:textColor="@color/colorGreyHint"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="@dimen/margin_5"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/bg_rounded_rect_white"
+            />
+        <EditText
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YYYY"
+            android:layout_weight="1"
+            android:textColor="@color/colorGreyHint"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="@dimen/margin_5"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/bg_rounded_rect_white"
+            />
+        <EditText
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:textColor="@color/colorGreyHint"
+
+            android:drawablePadding="@dimen/margin_5"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/bg_rounded_rect_white"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/yellow_btn_bg"/>
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_white_rect_boundry"/>
+    </LinearLayout>
+</LinearLayout>

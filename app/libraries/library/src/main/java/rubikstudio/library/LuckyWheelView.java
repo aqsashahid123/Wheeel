@@ -69,7 +69,7 @@ public class LuckyWheelView extends RelativeLayout implements PielView.PieRotate
         }
 
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        RelativeLayout frameLayout = (RelativeLayout) inflater.inflate(R.layout.lucky_wheel_layout, this, false);
+        FrameLayout frameLayout = (FrameLayout) inflater.inflate(R.layout.lucky_wheel_layout, this, false);
 
         pielView = (PielView) frameLayout.findViewById(R.id.pieView);
         ivCursorView = (ImageView) frameLayout.findViewById(R.id.cursorView);

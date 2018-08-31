@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorGreen"
+    android:background="@drawable/gradiant"
     tools:context=".Views.Activities.MainActivity">
 
     <TextView
@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/label_spin_to_play"
-        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:textColor="#693474"
         android:textSize="@dimen/textsize_25" />
 
     <LinearLayout
@@ -22,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_20"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -45,9 +48,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="@string/label_spin_to_play"
+                android:text="Game Id"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/textsize_15" />
+                android:textSize="13sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -72,7 +75,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/label_my_bet"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/textsize_15" />
+                android:textSize="13sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -97,36 +100,90 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/label_balance"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/textsize_15" />
+                android:textSize="13sp" />
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvLabelLuckyNum"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/llData"
-        android:layout_marginTop="@dimen/margin_10"
+        android:id="@+id/llLuckyNum"
         android:gravity="center"
-        android:text="1,2,3,4,8"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/textsize_20" />
+        android:layout_below="@+id/llData"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_lucky_num"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="4"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="@dimen/margin_5"
+            android:textColor="#00B95A"
+            android:textSize="@dimen/textsize_20" />
+        <TextView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_lucky_num"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="4"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="@dimen/margin_5"
+            android:textColor="#00B95A"
+            android:textSize="@dimen/textsize_20" />
+        <TextView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_lucky_num"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="6"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="@dimen/margin_5"
+            android:textColor="#00B95A"
+            android:textSize="@dimen/textsize_20" />
+        <TextView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_lucky_num"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="3"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="@dimen/margin_5"
+            android:textColor="#00B95A"
+            android:textSize="@dimen/textsize_20" />
+
+    </LinearLayout>
+
 
 
     <TextView
         android:id="@+id/tvLuckyNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLabelLuckyNum"
-        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/llLuckyNum"
         android:gravity="center"
         android:text="Your lucky numbers"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/textsize_15" />
 
     <RelativeLayout
+        android:layout_marginTop="@dimen/margin_20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginRight="@dimen/margin_30"
         android:layout_below="@+id/tvLuckyNum">
 
         <rubikstudio.library.LuckyWheelView
@@ -151,11 +208,11 @@
                 android:id="@+id/ivPin"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-
                 android:layout_centerInParent="true"
-
                 android:layout_marginBottom="-3dp"
-                android:src="@drawable/pin" />
+
+                android:src="@drawable/pin"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/btnPlay"
@@ -163,8 +220,10 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/ivPin"
                 android:layout_centerInParent="true"
-                android:background="@drawable/bg_circular_white_button"
-                android:text="Spin" />
+                android:background="@drawable/bg_btn_spin"
+
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

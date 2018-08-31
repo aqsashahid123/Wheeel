@@ -1,92 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorGreen"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradiant"
     android:orientation="vertical"
     tools:context=".Views.Activities.PersonalInfoSignup">
-
-    <com.anton46.stepsview.StepsView
-        android:id="@+id/stepsView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_10"
-        android:layout_marginTop="@dimen/margin_30"
-        android:gravity="center"
-        android:text="Sign Up"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/textsize_20" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_30"
-        android:gravity="center"
-        android:text="Personal Information"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/textsize_15" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_50"
-        android:layout_marginRight="@dimen/margin_50"
-        android:layout_marginTop="@dimen/margin_10"
-        android:background="@drawable/bg_edittext_white"
-        android:drawableLeft="@drawable/user"
-        android:drawablePadding="@dimen/margin_10"
-        android:hint="@string/label_username"
-        android:padding="@dimen/margin_10"
-        android:textColorHint="@color/colorGreyHint" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_50"
-        android:layout_marginRight="@dimen/margin_50"
-        android:layout_marginTop="@dimen/margin_10"
-        android:background="@drawable/bg_edittext_white"
-        android:drawableLeft="@drawable/user"
-        android:drawablePadding="@dimen/margin_10"
-        android:hint="@string/label_password"
-        android:padding="@dimen/margin_10"
-        android:textColorHint="@color/colorGreyHint" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_50"
-        android:layout_marginRight="@dimen/margin_50"
-        android:layout_marginTop="@dimen/margin_10"
-        android:background="@drawable/bg_edittext_white"
-        android:drawableLeft="@drawable/user"
-        android:drawablePadding="@dimen/margin_10"
-        android:hint="Email"
-        android:padding="@dimen/margin_10"
-        android:textColorHint="@color/colorGreyHint" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnNextStep"
+        <com.anton46.stepsview.StepsView
+            android:id="@+id/stepsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_30" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textStyle="bold"
+            android:text="Personal Information"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_20" />
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_50"
             android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="Full Name"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:textSize="@dimen/textsize_17"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColorHint="@color/colorGreyHint" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="@string/label_username"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:textSize="@dimen/textsize_17"
+            android:paddingTop="@dimen/margin_10"
+            android:textColorHint="@color/colorGreyHint" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="Email"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textSize="@dimen/textsize_17"
+            android:textColorHint="@color/colorGreyHint" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="Phone Number"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textSize="@dimen/textsize_17"
+            android:textColorHint="@color/colorGreyHint" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="@string/label_password"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textSize="@dimen/textsize_17"
+            android:textColorHint="@color/colorGreyHint" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_edittext_white"
+            android:hint="@string/label_confirm_password"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textSize="@dimen/textsize_17"
+            android:textColorHint="@color/colorGreyHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_30"
-            android:background="@drawable/bg_btn_login"
-            android:text="Next Step"
-            android:layout_gravity="bottom"
-            android:textAllCaps="true"
-            android:textColor="@color/colorWhite" />
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:layout_marginRight="@dimen/margin_50"
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@drawable/bg_btn_signup_with_email"
+                android:text="Next Step"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

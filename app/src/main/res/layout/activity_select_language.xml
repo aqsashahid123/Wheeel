@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant"
+    tools:context=".Views.Activities.SelectLanguage">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bet_game"
+        android:layout_marginTop="@dimen/margin_30"
+        android:textSize="@dimen/textsize_20"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorGrey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select Language"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:textSize="@dimen/textsize_17"
+        android:textColor="@color/colorWhite"/>
+    <!--<EditText-->
+        <!--android:id="@+id/tvCountry"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ivLogo"-->
+        <!--android:layout_marginLeft="@dimen/margin_50"-->
+        <!--android:layout_marginRight="@dimen/margin_50"-->
+        <!--android:layout_marginTop="@dimen/margin_10"-->
+
+        <!--android:background="@drawable/bg_edittext_white"-->
+
+        <!--android:drawablePadding="@dimen/margin_5"-->
+        <!--android:padding="@dimen/margin_10"-->
+        <!--android:hint="  Language"-->
+        <!--android:textColor="#CDCDCD"-->
+        <!--android:textSize="@dimen/textsize_20" />-->
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:layout_below="@+id/ivLogo"
+        android:spinnerMode="dropdown"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@drawable/bg_edittext_white"
+        android:layout_marginTop="@dimen/margin_10"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnNextStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@drawable/bg_btn_signup_with_email"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

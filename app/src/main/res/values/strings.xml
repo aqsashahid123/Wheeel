@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Wheeel</string>
+    <string name="app_name">Bet Game</string>
     <string name="label_spin_to_play">Spin to play</string>
     <string name="label_my_bet">My Bet</string>
     <string name="label_balance">Balance</string>
     <string name="label_login">LOGIN</string>
     <string name="label_password">Password</string>
     <string name="label_username">Username</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="label_confirm_password">Confirm Password</string>
 </resources>

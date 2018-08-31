@@ -8,11 +8,12 @@ import android.widget.Button;
 
 import com.anton46.stepsview.StepsView;
 import com.example.onebyte.wheeel.R;
+import com.example.onebyte.wheeel.Views.StatusBarColor;
 
 public class PersonalInfoSignup extends AppCompatActivity implements View.OnClickListener {
 
     StepsView stepsView;
-    String[] arrSteps = {"step1","step2","step3"};
+    String[] arrSteps = {"","",""};
     Button btnNextStep;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +23,12 @@ public class PersonalInfoSignup extends AppCompatActivity implements View.OnClic
         btnNextStep = (Button) findViewById(R.id.btnNextStep);
         btnNextStep.setOnClickListener(this);
         stepsView.setLabels(arrSteps)
-                .setBarColorIndicator(getResources().getColor(R.color.colorDarkGreen))
+                .setBarColorIndicator(getResources().getColor(R.color.colorDarkPurple))
                 .setProgressColorIndicator(getResources().getColor(R.color.colorWhite))
                 .setLabelColorIndicator(getResources().getColor(R.color.colorWhite))
                 .setCompletedPosition(0)
                 .drawView();
+        StatusBarColor.SetColor(this);
     }
 
     @Override
